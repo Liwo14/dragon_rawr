@@ -21,7 +21,6 @@ void empty_buffer(void)
 
     c = 0;
     res = 0;
-    printf("Bonjour\n");
     while(c != '\n')
     {
         res = read(0, &c, 1);

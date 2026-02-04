@@ -6,7 +6,7 @@
 /*   By: ccolnat <ccolnat@student.42nice.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/01/31 09:20:59 by ccolnat           #+#    #+#             */
-/*   Updated: 2026/02/03 11:05:30 by ccolnat          ###   ########.fr       */
+/*   Updated: 2026/02/04 06:52:30 by ccolnat          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ int read_test(const int word_size, const int nb_words)
         return (-2);
     while(i != (nb_words + 1))
     {
-        printf("\033[33mThe program is waiting for word nb %d out of %d\033[0m\n", i, nb_words);
+        printf("\033[33mThe program is waiting for word number %d out of %d\033[0m\n", i, nb_words);
         read_count = read(0, (read_buffer + read_total_count), word_size + 1);
         if (read_count == -1)
         {
